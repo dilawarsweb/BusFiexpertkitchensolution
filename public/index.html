@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusFi - Expert Kitchen Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+                    <div class="logo-title">BusFi</div>
+                    <div class="logo-subtitle">Expert Kitchen Solutions</div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('services')" class="nav-link">Services</button>
+                    <button onclick="scrollToSection('portfolio')" class="nav-link">Portfolio</button>
+                    <button onclick="scrollToSection('testimonials')" class="nav-link">Testimonials</button>
+                    <button onclick="scrollToSection('privacy')" class="nav-link">Privacy</button>
+                    <a href="tel:+1-800-548-2436" class="phone-button">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        1-800-548-2436
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-button" class="mobile-menu-button" onclick="toggleMobileMenu()">
+                    <svg id="menu-icon" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg id="close-icon" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <nav class="mobile-nav">
+                <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+                <button onclick="scrollToSection('services')" class="mobile-nav-link">Services</button>
+                <button onclick="scrollToSection('portfolio')" class="mobile-nav-link">Portfolio</button>
+                <button onclick="scrollToSection('testimonials')" class="mobile-nav-link">Testimonials</button>
+                <button onclick="scrollToSection('privacy')" class="mobile-nav-link">Privacy</button>
+                <a href="tel:+1-800-548-2436" class="mobile-phone-button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    1-800-548-2436
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-pattern"></div>
+            <div class="hero-container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 13.87A4 4 0 017.41 6a5.11 5.11 0 011.05-1.54 5 5 0 017.08 0A5.11 5.11 0 0116.59 6 4 4 0 0118 13.87V21H6z"/>
+                                <line x1="12" y1="8" x2="12" y2="13"></line>
+                            </svg>
+                            <span>Premium Kitchen Solutions</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Transform Your Kitchen Into a
+                            <span class="hero-title-accent">Culinary Masterpiece</span>
+                        </h1>
+                        <p class="hero-description">
+                            Expert kitchen building, remodeling, and repair services across the USA.
+                            From concept to completion, we bring your dream kitchen to life with precision craftsmanship and attention to detail.
+                        </p>
+                        <div class="hero-buttons">
+                            <button onclick="scrollToSection('contact-form')" class="button-primary">
+                                Get Free Consultation
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                            <button onclick="scrollToSection('portfolio')" class="button-secondary">
+                                View Our Work
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Satisfaction Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image">
+                            <img src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern luxury kitchen">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                        <div class="hero-rating-card">
+                            <div class="rating-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="rating-text">4.9/5 Rating</div>
+                            <p class="rating-subtext">Trusted by homeowners nationwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title">About BusFi</h2>
+                        <p class="about-text">
+                            With over 15 years of experience in kitchen design and construction, BusFi has become a trusted name in creating beautiful, functional kitchens across the United States.
+                        </p>
+                        <p class="about-text">
+                            Our team of expert craftsmen and designers are passionate about transforming kitchens into spaces where families gather, memories are made, and culinary dreams come to life.
+                        </p>
+                        <p class="about-text">
+                            We pride ourselves on delivering exceptional quality, attention to detail, and personalized service that exceeds expectations on every project.
+                        </p>
+                    </div>
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 21h10M12 3v18m-7.07-2.929a10 10 0 1 1 14.142 0"/>
+                                </svg>
+                            </div>
+                            <div class="stat-value">15+</div>
+                            <div class="stat-title">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="stat-value">500+</div>
+                            <div class="stat-title">Happy Clients</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div class="stat-value">100%</div>
+                            <div class="stat-title">On-Time Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="stat-value">4.9/5</div>
+                            <div class="stat-title">Client Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-center">Our Kitchen Services</h2>
+                    <p class="section-description">
+                        Comprehensive kitchen solutions tailored to your needs. Whether you're building new, remodeling, or just need repairs, we've got you covered.
+                    </p>
+                </div>
+                <div class="services-grid" id="services-grid"></div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-center">Our Recent Projects</h2>
+                    <p class="section-description">
+                        See how we've transformed kitchens across the USA. Each project showcases our commitment to quality craftsmanship and attention to detail.
+                    </p>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid"></div>
+                <div class="portfolio-cta">
+                    <button onclick="scrollToSection('contact-form')" class="button-primary">
+                        Start Your Kitchen Transformation
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-center">What Our Clients Say</h2>
+                    <p class="section-description">
+                        Don't just take our word for it. Here's what homeowners across the USA say about their experience working with us.
+                    </p>
+                </div>
+                <div class="testimonials-grid" id="testimonials-grid"></div>
+                <div class="testimonials-summary">
+                    <div class="summary-item">
+                        <div class="summary-number">4.9/5</div>
+                        <div class="summary-label">Average Rating</div>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-item">
+                        <div class="summary-number">500+</div>
+                        <div class="summary-label">Happy Clients</div>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-item">
+                        <div class="summary-number">100%</div>
+                        <div class="summary-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="section-title">Get Your Free Consultation</h2>
+                        <p class="contact-intro">
+                            Ready to transform your kitchen? Fill out the form and our team will contact you within 24 hours to discuss your project.
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-title">Call Us</div>
+                                    <a href="tel:+1-800-548-2436" class="contact-method-link">1-800-KITCHEN (1-800-548-2436)</a>
+                                    <p class="contact-method-hours">Mon-Fri: 8am-6pm, Sat: 9am-4pm</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-title">Email Us</div>
+                                    <a href="mailto:info@kitchenpros.com" class="contact-method-link">info@kitchenpros.com</a>
+                                    <p class="contact-method-hours">We respond within 24 hours</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-method-title">Service Areas</div>
+                                    <p class="contact-method-text">We serve homeowners across the USA with local teams in major metropolitan areas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-choose-us">
+                            <h3 class="why-choose-title">Why Choose Us?</h3>
+                            <ul class="why-choose-list">
+                                <li class="why-choose-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    Licensed & Insured Professionals
+                                </li>
+                                <li class="why-choose-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    Free Design Consultation
+                                </li>
+                                <li class="why-choose-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    Transparent Pricing
+                                </li>
+                                <li class="why-choose-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    Quality Guarantee
+                                </li>
+                                <li class="why-choose-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    On-Time Project Completion
+                                </li>
+                                <li class="why-choose-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    Excellent Customer Service
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <div id="success-message" class="success-message hidden">
+                            <div class="success-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3 class="success-title">Thank You!</h3>
+                            <p class="success-text">
+                                We've received your request and will contact you within 24 hours to discuss your kitchen project.
+                            </p>
+                        </div>
+                        <form id="contact-form-element" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="form-input" placeholder="John Smith">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" required class="form-input" placeholder="john@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required class="form-input" placeholder="(555) 123-4567">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location" class="form-label">Location (City, State)</label>
+                                <input type="text" id="location" name="location" class="form-input" placeholder="Austin, TX">
+                            </div>
+                            <div class="form-group">
+                                <label for="project_type" class="form-label">Project Type *</label>
+                                <select id="project_type" name="project_type" required class="form-input">
+                                    <option value="">Select a service</option>
+                                    <option value="remodel">Complete Kitchen Remodel</option>
+                                    <option value="new_construction">New Kitchen Construction</option>
+                                    <option value="repairs">Kitchen Repairs & Updates</option>
+                                    <option value="cabinets">Custom Cabinetry</option>
+                                    <option value="refinishing">Cabinet Refinishing</option>
+                                    <option value="consultation">Design Consultation</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="budget_range" class="form-label">Budget Range</label>
+                                    <select id="budget_range" name="budget_range" class="form-input">
+                                        <option value="">Select range</option>
+                                        <option value="under_10k">Under $10,000</option>
+                                        <option value="10k_25k">$10,000 - $25,000</option>
+                                        <option value="25k_50k">$25,000 - $50,000</option>
+                                        <option value="50k_100k">$50,000 - $100,000</option>
+                                        <option value="over_100k">Over $100,000</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timeline" class="form-label">Timeline</label>
+                                    <select id="timeline" name="timeline" class="form-input">
+                                        <option value="">Select timeline</option>
+                                        <option value="immediate">Immediate (1-2 weeks)</option>
+                                        <option value="1_3_months">1-3 months</option>
+                                        <option value="3_6_months">3-6 months</option>
+                                        <option value="6_plus_months">6+ months</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="project_details" class="form-label">Project Details</label>
+                                <textarea id="project_details" name="project_details" rows="4" class="form-input" placeholder="Tell us about your kitchen project..."></textarea>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="consent" name="consent_given" required class="checkbox-input">
+                                <label for="consent" class="checkbox-label">
+                                    I agree to be contacted regarding my kitchen project and have read the <a href="#privacy" class="checkbox-link">Privacy Policy</a>. *
+                                </label>
+                            </div>
+                            <div id="error-message" class="error-message hidden">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                                <p id="error-text"></p>
+                            </div>
+                            <button type="submit" id="submit-button" class="submit-button">
+                                Get Free Consultation
+                            </button>
+                            <p class="form-disclaimer">
+                                By submitting this form, you agree to receive communications from us regarding your inquiry.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy" class="privacy">
+            <div class="privacy-container">
+                <div class="privacy-header">
+                    <div class="privacy-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title-center">Privacy Policy</h2>
+                    <p class="privacy-date">Last updated: <span id="current-date"></span></p>
+                </div>
+                <div class="privacy-content">
+                    <div class="privacy-intro">
+                        <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
+                    </div>
+                    <div class="privacy-sections" id="privacy-sections"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 13.87A4 4 0 017.41 6a5.11 5.11 0 011.05-1.54 5 5 0 017.08 0A5.11 5.11 0 0116.59 6 4 4 0 0118 13.87V21H6z"/>
+                                <line x1="12" y1="8" x2="12" y2="13"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="footer-logo-title">KitchenPros</div>
+                            <div class="footer-logo-subtitle">Expert Kitchen Solutions</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Transforming kitchens across the USA with expert craftsmanship and attention to detail since 2008.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-list">
+                        <li><a href="#services" class="footer-link">Kitchen Remodeling</a></li>
+                        <li><a href="#services" class="footer-link">New Construction</a></li>
+                        <li><a href="#services" class="footer-link">Kitchen Repairs</a></li>
+                        <li><a href="#services" class="footer-link">Cabinet Refinishing</a></li>
+                        <li><a href="#services" class="footer-link">Custom Cabinetry</a></li>
+                        <li><a href="#services" class="footer-link">Design Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="#portfolio" class="footer-link">Our Portfolio</a></li>
+                        <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                        <li><a href="#contact-form" class="footer-link">Get a Quote</a></li>
+                        <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#privacy" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <a href="tel:+1-800-548-2436" class="footer-link">1-800-KITCHEN</a>
+                                <div class="footer-contact-hours">Mon-Fri: 8am-6pm</div>
+                            </div>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:info@kitchenpros.com" class="footer-link">info@kitchenpros.com</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Serving homeowners across the USA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    <span id="footer-year"></span> KitchenPros. All rights reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy" class="footer-link">Privacy Policy</a>
+                    <a href="#privacy" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
